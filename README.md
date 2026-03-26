@@ -319,49 +319,100 @@ public class GameLibrary {
 |        SISTEM GAME LIBRARY PRIBADI - OOP         |
 +==================================================+
 
+========== MENAMBAH GAME KE LIBRARY ==========
+  [+] "Elden Ring" ditambahkan ke library Arul.
+  [+] "Sekiro: Shadows Die Twice" ditambahkan ke library Arul.
+
 ========== SESI MAIN: ELDEN RING ==========
   [>] Mulai main "Elden Ring"
-  [+] +15 jam -> total 15 jam untuk "Elden Ring"
-  [UNLOCKED] Achievement unlocked: "Dragonslayer" +200 XP (total XP: 200)
-  [BOOK] Chapter 1/12 selesai di "Elden Ring"
-  ...
-  [*] PLATINUM! "Elden Ring" -- semua 3 achievement terbuka!
+  [] +15 jam -> total 15 jam untuk "Elden Ring"
+  [[UNLOCKED]] Achievement unlocked: "Dragonslayer" +200 XP (total XP: 200)
+  [[BOOK]] Chapter 1/12 selesai di "Elden Ring"
+  [[BOOK]] Chapter 2/12 selesai di "Elden Ring"
+  [[BOOK]] Chapter 3/12 selesai di "Elden Ring"
+  [] +25 jam -> total 40 jam untuk "Elden Ring"
+  [[UNLOCKED]] Achievement unlocked: "Walking Mausoleum" +300 XP (total XP: 500)
+  [[BOOK]] Chapter 4/12 selesai di "Elden Ring"
+  [[BOOK]] Chapter 5/12 selesai di "Elden Ring"
+  [[BOOK]] Chapter 6/12 selesai di "Elden Ring"
+  [[BOOK]] Chapter 7/12 selesai di "Elden Ring"
+  [[BOOK]] Chapter 8/12 selesai di "Elden Ring"
+  [[BOOK]] Chapter 9/12 selesai di "Elden Ring"
+  [[BOOK]] Chapter 10/12 selesai di "Elden Ring"
+  [[BOOK]] Chapter 11/12 selesai di "Elden Ring"
+  [[BOOK]] Chapter 12/12 selesai di "Elden Ring"
+  [] Semua chapter selesai! Tandai tamat? Gunakan tandaiTamat().
+  [] +20 jam -> total 60 jam untuk "Elden Ring"
+  [[UNLOCKED]] Achievement unlocked: "Elden Lord" +500 XP (total XP: 1000)
+  [[OK]] "Elden Ring" ditandai TAMAT setelah 60 jam.
+
+  [TEST] Coba platinum padahal achievement belum semua terbuka...
+  [] PLATINUM! "Elden Ring" - semua 3 achievement terbuka!
+
+========== SESI MAIN: SEKIRO (DITINGGALKAN) ==========
+  [>] Mulai main "Sekiro: Shadows Die Twice"
+  [] +8 jam -> total 8 jam untuk "Sekiro: Shadows Die Twice"
+  [[FIGHT]] Boss 1/8 dikalahkan di "Sekiro: Shadows Die Twice" [Hard]
+  [[FIGHT]] Boss 2/8 dikalahkan di "Sekiro: Shadows Die Twice" [Hard]
+  [] "Sekiro: Shadows Die Twice" ditinggalkan.
 
 ========== DETAIL GAME ==========
-  --------------------------------------------------------
-     #101  Elden Ring  (2022)
+
+--------------------------------------------------------
+   #101  Elden Ring  (2022)
   Developer   : FromSoftware
   Genre       : Open World RPG
-  Status      : Platinum / 100%
+  Status      :  Platinum / 100%
   Jam Main    : 60 jam
   Achievement : 3/3 (100%)
   Total XP    : 1000
   Skor Review : 90/100
   Info        : Chapter: 12/12
-  --------------------------------------------------------
+--------------------------------------------------------
 
-========== STATISTIK LIBRARY ==========
-  Total game          : 5
-    Belum dimulai     : 1
+   Semua game di library Arul (2 game):
+  ----------------------------------------------------------------------------------------------------
+  #   Judul                        | Genre              | Status                 |      Jam | Skor
+  ----------------------------------------------------------------------------------------------------
+  #101 Elden Ring                   | Open World RPG     |  Platinum / 100%       |  60 jam | Skor: 90
+  #102 Sekiro: Shadows Die Twice    | Souls-like         |  Ditinggalkan          |   8 jam | Skor: 17
+  ----------------------------------------------------------------------------------------------------
+
+================================================
+   LIBRARY MILIK ARUL
+================================================
+  Total game          : 2
+   Belum dimulai    : 0
   >  Sedang dimainkan : 0
-  [OK] Tamat          : 2
-    Platinum          : 1
-    Ditinggalkan      : 1
-  Total jam main      : 135 jam
-  Total XP terkumpul  : 2550 XP
-  Rata-rata skor      : 63.3/100
+  [OK] Tamat            : 0
+   Platinum         : 1
+   Ditinggalkan     : 1
+  -------------------------------------
+  Total jam main      : 68 jam
+  Total XP terkumpul  : 1000 XP
+  Rata-rata skor      : 53.5/100
+================================================
+========== DEMO FILTER LIBRARY ==========
 
-========== DEMO FILTER ==========
-  [SEARCH] Filter: Status = [OK] Tamat -- 2 game ditemukan
-  [SEARCH] Filter: Jam main >= 30 jam -- 2 game ditemukan
-  [SEARCH] Filter: Skor review >= 70 -- 2 game ditemukan
+  [SEARCH] Filter: Status = [OK] Tamat - 0 game ditemukan
+  (tidak ada hasil)
+
+  [SEARCH] Filter: Genre = Souls-like - 1 game ditemukan
+  #102 Sekiro: Shadows Die Twice    | Souls-like         |  Ditinggalkan          |   8 jam | Skor: 17
+
+  [SEARCH] Filter: Jam main >= 30 jam - 1 game ditemukan
+  #101 Elden Ring                   | Open World RPG     |  Platinum / 100%       |  60 jam | Skor: 90
+
+  [SEARCH] Filter: Skor review >= 70 - 1 game ditemukan
+  #101 Elden Ring                   | Open World RPG     |  Platinum / 100%       |  60 jam | Skor: 90
 
    Rekomendasi game berikutnya:
-  -> "God of War Ragnarok" (Action Adventure)
-  -> "Sekiro: Shadows Die Twice" (Souls-like)
+  -> "Sekiro: Shadows Die Twice" (Souls-like) -  Ditinggalkan
 
 ========== EDGE CASE ==========
-  [TEST] Tambah jam ke game belum dimulai -> otomatis mulai...
+  [TEST] Tambah jam ke game yang belum dimulai -> otomatis mulai...     
+
+  [TEST] Coba NG+ tanpa tamat dulu...
   [!] Harus tamat dulu sebelum NG+.
 ```
 
