@@ -1,6 +1,6 @@
 # Sistem Game Library Pribadi
 
-**Mata Kuliah:** Struktur Data dan Pemrograman Berorientasi Objek
+> **Mata Kuliah:** Struktur Data dan Pemrograman Berorientasi Objek
 
 **Studi Kasus:** Memilih & Mengelola Koleksi Game Pribadi
 
