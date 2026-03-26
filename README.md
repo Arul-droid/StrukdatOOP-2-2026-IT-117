@@ -1,6 +1,6 @@
 # Sistem Game Library Pribadi
 
-> **Mata Kuliah:** Pemrograman Berorientasi Objek
+> **Mata Kuliah:** Struktur Data dan Pemrograman Berorientasi Objek
 > **Studi Kasus:** Memilih & Mengelola Koleksi Game Pribadi
 > **Bahasa:** Java 17+
 
@@ -436,7 +436,7 @@ java -cp out src.Main
 
 | Field | Keterangan |
 |---|---|
-| Nama | *(isi nama Anda)* |
-| NRP | *(isi NRP Anda)* |
-| Kelas | *(isi kelas Anda)* |
-| Mata Kuliah | Pemrograman Berorientasi Objek |
+| Nama | *Muhamad Nasrulhaq* |
+| NRP | *5027251117* |
+| Kelas | *B* |
+| Mata Kuliah | Struktur Data dan Pemrograman Berorientasi Objek |
