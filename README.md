@@ -2,9 +2,9 @@
 
 > **Mata Kuliah:** Struktur Data dan Pemrograman Berorientasi Objek
 
-**Studi Kasus:** Memilih & Mengelola Koleksi Game Pribadi
+> **Studi Kasus:** Memilih & Mengelola Koleksi Game Pribadi
 
-**Bahasa:** Java 17+
+> **Bahasa:** Java 17+
 
 ---
 
