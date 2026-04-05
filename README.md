@@ -179,58 +179,8 @@ public class Main {
 ---
 
 ## Screenshot Output
+<img width="2070" height="1775" alt="image" src="https://github.com/user-attachments/assets/61754f1b-b1d5-472a-8d48-8c93023017ff" />
 
-```
-==============================
-  Perpustakaan Game Milik: Arul
-  Total Game: 5
-==============================
-
-[Game 1]
-Judul       : Hollow Knight
-Publisher   : Team Cherry
-Waktu Main  : 42.5 jam
-Kompleasi   : 100.0%
-Status      : Selesai
-------------------------------
-
-[Game 2]
-Judul       : Celeste
-Publisher   : Maddy Makes Games
-Waktu Main  : 18.0 jam
-Kompleasi   : 75.0%
-Status      : Sedang Dimainkan
-------------------------------
-
-[Game 3]
-Judul       : Stardew Valley
-Publisher   : ConcernedApe
-Waktu Main  : 60.0 jam
-Kompleasi   : 30.0%
-Status      : Baru Dimulai
-------------------------------
-
-[Game 4]
-Judul       : Hades
-Publisher   : Supergiant Games
-Waktu Main  : 25.5 jam
-Kompleasi   : 100.0%
-Status      : Selesai
-------------------------------
-
-[Game 5]
-Judul       : Undertale
-Publisher   : Toby Fox
-Waktu Main  : 8.0 jam
-Kompleasi   : 15.0%
-Status      : Baru Dimulai
-------------------------------
-
-====== Ringkasan ======
-Total waktu main  : 154.0 jam
-Game selesai      : 2 dari 5
-=======================
-```
 
 ---
 
