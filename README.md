@@ -13,21 +13,21 @@ classDiagram
     class Game {
         - String title
         - String publisher
-        - double playTimeHours
-        - double completionPercent
-        + Game(title, publisher, playTimeHours, completionPercent)
+        - double playTime
+        - double percentKomplit
+        + Game(title, publisher, playTime, percentKomplit)
         + getTitle() String
         + getPublisher() String
-        + getPlayTimeHours() double
-        + getCompletionPercent() double
+        + getplayTime() double
+        + getpercentKomplit() double
         + getStatus() String
         + displayInfo() void
     }
 
-    class GameLibrary {
-        - String ownerName
-        - ArrayList~Game~ gameList
-        + GameLibrary(ownerName)
+    class Library {
+        - String pemilik
+        - ArrayList~Game~ listGame
+        + Library(pemilik)
         + addGame(game) void
         + showAllGames() void
         + showSummary() void
@@ -38,7 +38,7 @@ classDiagram
     }
 
     GameLibrary "1" o-- "many" Game : menyimpan
-    Main ..> GameLibrary : menggunakan
+    Main ..> Library : menggunakan
     Main ..> Game : membuat
 ```
 
