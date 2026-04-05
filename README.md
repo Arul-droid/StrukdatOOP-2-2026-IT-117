@@ -52,14 +52,14 @@ classDiagram
 public class Game {
     private String title;
     private String publisher;
-    private double playTimeHours;
-    private double completionPercent;
+    private double playTime;
+    private double percentKomplit;
 
-    public Game(String title, String publisher, double playTimeHours, double completionPercent) {
+    public Game(String title, String publisher, double playTime, double percentKomplit) {
         this.title = title;
         this.publisher = publisher;
-        this.playTimeHours = playTimeHours;
-        this.completionPercent = completionPercent;
+        this.playTime = playTime;
+        this.percentKomplit = percentKomplit;
     }
 
     public String getTitle() {
@@ -70,18 +70,18 @@ public class Game {
         return publisher;
     }
 
-    public double getPlayTimeHours() {
-        return playTimeHours;
+    public double getplayTime() {
+        return playTime;
     }
 
-    public double getCompletionPercent() {
-        return completionPercent;
+    public double getpercentKomplit() {
+        return percentKomplit;
     }
 
     public String getStatus() {
-        if (completionPercent == 100.0) {
+        if (percentKomplit == 100.0) {
             return "Selesai";
-        } else if (completionPercent >= 50.0) {
+        } else if (percentKomplit >= 50.0) {
             return "Sedang Dimainkan";
         } else {
             return "Baru Dimulai";
@@ -91,39 +91,39 @@ public class Game {
     public void displayInfo() {
         System.out.println("Judul       : " + title);
         System.out.println("Publisher   : " + publisher);
-        System.out.println("Waktu Main  : " + playTimeHours + " jam");
-        System.out.println("Kompleasi   : " + completionPercent + "%");
+        System.out.println("Waktu Main  : " + playTime + " jam");
+        System.out.println("Komplisi   : " + percentKomplit + "%");
         System.out.println("Status      : " + getStatus());
     }
 }
 ```
 
-### GameLibrary.java
+### Library.java
 
 ```java
 import java.util.ArrayList;
 
-public class GameLibrary {
-    private String ownerName;
-    private ArrayList<Game> gameList;
+public class Library {
+    private String pemilik;
+    private ArrayList<Game> listGame;
 
-    public GameLibrary(String ownerName) {
-        this.ownerName = ownerName;
-        this.gameList = new ArrayList<>();
+    public Library(String pemilik) {
+        this.pemilik = pemilik;
+        this.listGame = new ArrayList<>();
     }
 
     public void addGame(Game game) {
-        gameList.add(game);
+        listGame.add(game);
     }
 
     public void showAllGames() {
         System.out.println("==============================");
-        System.out.println("  Perpustakaan Game Milik: " + ownerName);
-        System.out.println("  Total Game: " + gameList.size());
+        System.out.println("  Perpustakaan Game Milik: " + pemilik);
+        System.out.println("  Total Game: " + listGame.size());
         System.out.println("==============================");
-        for (int i = 0; i < gameList.size(); i++) {
+        for (int i = 0; i < listGame.size(); i++) {
             System.out.println("\n[Game " + (i + 1) + "]");
-            gameList.get(i).displayInfo();
+            listGame.get(i).displayInfo();
             System.out.println("------------------------------");
         }
     }
@@ -132,16 +132,16 @@ public class GameLibrary {
         double totalHours = 0;
         int selesai = 0;
 
-        for (Game game : gameList) {
-            totalHours += game.getPlayTimeHours();
-            if (game.getCompletionPercent() == 100.0) {
+        for (Game game : listGame) {
+            totalHours += game.getplayTime();
+            if (game.getpercentKomplit() == 100.0) {
                 selesai++;
             }
         }
 
         System.out.println("\n====== Ringkasan ======");
         System.out.println("Total waktu main  : " + totalHours + " jam");
-        System.out.println("Game selesai      : " + selesai + " dari " + gameList.size());
+        System.out.println("Game selesai      : " + selesai + " dari " + listGame.size());
         System.out.println("=======================");
     }
 }
@@ -153,19 +153,15 @@ public class GameLibrary {
 public class Main {
     public static void main(String[] args) {
 
-        GameLibrary library = new GameLibrary("Arul");
+        Library library = new Library("Arul");
 
         Game game1 = new Game("Hollow Knight", "Team Cherry", 42.5, 100.0);
-        Game game2 = new Game("Celeste", "Maddy Makes Games", 18.0, 75.0);
-        Game game3 = new Game("Stardew Valley", "ConcernedApe", 60.0, 30.0);
-        Game game4 = new Game("Hades", "Supergiant Games", 25.5, 100.0);
-        Game game5 = new Game("Undertale", "Toby Fox", 8.0, 15.0);
+        Game game2 = new Game("Stardew Valley", "ConcernedApe", 60.0, 30.0);
+        Game game3 = new Game("Hades", "Supergiant Games", 25.5, 100.0);
 
         library.addGame(game1);
         library.addGame(game2);
         library.addGame(game3);
-        library.addGame(game4);
-        library.addGame(game5);
 
         library.showAllGames();
         library.showSummary();
@@ -240,16 +236,16 @@ Semua atribut di kelas `Game` (title, publisher, playTimeHours, completionPercen
 Logika untuk menentukan status game (Selesai, Sedang Dimainkan, Baru Dimulai) disembunyikan di dalam method `getStatus()`. Pengguna kelas `Game` cukup memanggil method tersebut tanpa perlu tahu detail kondisi if-else di dalamnya.
 
 **3. Object dan Class**
-Program menggunakan dua kelas utama yaitu `Game` dan `GameLibrary`. Setiap game adalah sebuah objek yang dibuat dari kelas `Game`, dan objek-objek tersebut dikumpulkan ke dalam satu objek `GameLibrary`.
+Program menggunakan dua kelas utama yaitu `Game` dan `Library`. Setiap game adalah sebuah objek yang dibuat dari kelas `Game`, dan objek-objek tersebut dikumpulkan ke dalam satu objek `Library`.
 
 **4. Aggregation**
-Kelas `GameLibrary` memiliki kumpulan objek `Game` di dalam `ArrayList`. Ini adalah hubungan aggregation, di mana `GameLibrary` mengandung banyak objek `Game`, namun objek `Game` tetap bisa berdiri sendiri tanpa `GameLibrary`.
+Kelas `Library` memiliki kumpulan objek `Game` di dalam `ArrayList`. Ini adalah hubungan aggregation, di mana `Library` mengandung banyak objek `Game`, namun objek `Game` tetap bisa berdiri sendiri tanpa `Library`.
 
 ---
 
 ## Keunikan Program
 
-Keunikan program ini dibandingkan teman lain adalah adanya **fitur status otomatis** pada setiap game. Status tidak diinput secara manual, melainkan dihitung secara otomatis oleh method `getStatus()` berdasarkan nilai `completionPercent`:
+Keunikan program ini dibandingkan teman lain adalah adanya **fitur status otomatis** pada setiap game. Status tidak diinput secara manual, melainkan dihitung secara otomatis oleh method `getStatus()` berdasarkan nilai `percentKomplit`:
 
 - 100% menjadi **Selesai**
 - 50% ke atas menjadi **Sedang Dimainkan**
