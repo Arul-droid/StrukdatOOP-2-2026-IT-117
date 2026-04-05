@@ -37,7 +37,7 @@ classDiagram
         + main(args) void
     }
 
-    GameLibrary "1" o-- "many" Game : menyimpan
+    Library "1" o-- "many" Game : menyimpan
     Main ..> Library : menggunakan
     Main ..> Game : membuat
 ```
