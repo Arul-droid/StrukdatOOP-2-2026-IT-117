@@ -1,3 +1,10 @@
+| Field | Keterangan |
+|---|---|
+| Nama | *Muhamad Nasrulhaq* |
+| NRP | *5027251117* |
+| Kelas | *B* |
+| Mata Kuliah | Struktur Data dan Pemrograman Berorientasi Objek |
+
 # Sistem Penyimpanan Koleksi Game Pribadi
 
 ## Deskripsi Kasus
